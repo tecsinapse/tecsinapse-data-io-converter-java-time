@@ -32,6 +32,8 @@ public class YearMonthTableCellConverterTest extends AbstractTableCellConverter<
                 {null, null},
                 {EMPTY_STRING, null},
                 {YEAR_MONTH_STR, YearMonth.from(LocalDateTime.ofInstant(DATE.toInstant(), ZoneId.systemDefault()))},
+                {"2013-01", YearMonth.from(LocalDateTime.ofInstant(DATE.toInstant(), ZoneId.systemDefault()))},
+                {"01/2013", YearMonth.from(LocalDateTime.ofInstant(DATE.toInstant(), ZoneId.systemDefault()))},
                 {DATE, YearMonth.from(LocalDateTime.ofInstant(DATE.toInstant(), ZoneId.systemDefault()))}
         };
     }
